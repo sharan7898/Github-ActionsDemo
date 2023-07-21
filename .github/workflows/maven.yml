@@ -29,10 +29,10 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: javatechie/springboot-images-new
+        image: javatechie/github-action
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{ secrets.sharan7898 }}
+        password: ${{ secrets.Sharan@11 }}
 

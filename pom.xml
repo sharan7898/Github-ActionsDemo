@@ -5,8 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.5.4</version> <!-- Adjust the Spring Boot version to the latest stable release -->
 	</parent>
 	<groupId>com.Actiondemo</groupId>
 	<artifactId>actionDemo</artifactId>
@@ -30,29 +29,20 @@
 	</dependencies>
 	
 	<build>
-  <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-compiler-plugin</artifactId>
-      <version>3.8.0</version>
-      <configuration>
-        <release>11</release> <!-- Replace 11 with your desired Java version -->
-      </configuration>
-    </plugin>
-    <plugin>
+  		<plugins>
+    		<plugin>
+      			<groupId>org.apache.maven.plugins</groupId>
+      			<artifactId>maven-compiler-plugin</artifactId>
+      			<version>3.8.1</version> <!-- Upgrade to the latest version of the Maven Compiler Plugin -->
+      			<configuration>
+        			<release>11</release> <!-- Specify your desired Java version (Java 11 in this case) -->
+      			</configuration>
+    		</plugin>
+    		<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-  </plugins>
-  <finalName>github-action</finalName>
-</build>
-
-	
-		
-			
-		
-		
-	
-	
-	
+  		</plugins>
+  		<finalName>github-action</finalName>
+	</build>
 </project>
